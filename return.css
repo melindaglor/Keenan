@@ -1,0 +1,54 @@
+.isi-return {
+    margin-top: 220px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #76979d;
+    line-height: 40px;
+}
+
+.isi-return h1 {
+    font-weight: 900;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.isi-return p {
+    margin-left: 300px;
+    margin-right: 300px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.isi-return .mail p {
+    margin-bottom: 0px;
+}
+
+@media(max-width: 991px){
+    .isi-return {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        color: #76979d;
+        line-height: 30px;
+    }
+    
+    .isi-return h1 {
+        font-weight: 900;
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    .isi-return p {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+    
+    .isi-return .mail p {
+        margin-bottom: 0px;
+    }
+}
