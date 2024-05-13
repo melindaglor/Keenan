@@ -30,31 +30,18 @@
 <div class="container">
   <div class="judul">
     <h3><a href="index.html">Home / </a></h3>
-    <h3><a href="bianca.html">Bianca Dress</a></h3>
+    <h3><a href="reine.html">Reine</a></h3>
   </div>
 
+  <!--ISI-->
   <div class="kiri">
-     <!-- Full-width images with number text -->
-    <div class="mySlides">
-      <div class="numbertext">1 / 1</div>
-        <img src="images/5.JPG" onclick="showPopup()">
-    </div>
-
-
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- Thumbnail images -->
-    <div class="row">
-
-    </div>
+    <img src="images/reine.JPG" onclick="showPopup()">
   </div>
 
   <div class="kanan">
     <div class="title">
-      <h1>Bianca Dress</h1>
-      <h3>IDR. 798.000</h3>
+      <h1>Reine</h1>
+      <h3>IDR. 858.000</h3>
     </div>
 
     <hr>
@@ -65,20 +52,20 @@
 
     <div class="desc">
       <h1>Description</h1>
-      <h3>Made of 100% cotton. This dress offers a new, modest style in various colors to present an exclusive fashion. Available in fuschia, moss-green, and skyblue.
+      <h3>From outfits that are office appropriate to outer that are perfect for a night out on the town, these unisex unique button down shirts are the timeless basic we all need. Available brown, navy, black, and grey.
       </h3>
     </div>
 
     <div class="details">
       <h1>Details</h1>
-      <h3>Fabric: cotton/muslin</h3>
-      <h3>Color: fuschia, moss-green, skyblue</h3>
-      <h3>Bust: 90 cm (35 inch)</h3>
-      <h3>Length: 82 cm (32 inch)</h3>
-      <h3>Care & Wash: wash cold water with soft tumble</h3>
+      <h3>Fabric: double gauze</h3>
+      <h3>Color: brown, navy, black, grey</h3>
+      <h3>Bust: 120 cm (48 inch)</h3>
+      <h3>Length: 75 cm (29 inch)</h3>
+      <h3>Care & Wash: wash cold with soft tumble</h3>
       <h3><b>All Size</b></h3>
     </div>
-
+    
   </div>
 
 </div>
@@ -164,42 +151,26 @@
 
   <!--Popup 1-->
   <div class="full-screen hidden flex-container-center">
-    <img class="mySlides1" src="images/5.JPG">
-  
-    <!-- Next and previous buttons -->
-    <a class="prev1" onclick="plusDivs(-1)">&#10094;</a>
-    <a class="next1" onclick="plusDivs(+1)">&#10095;</a>
+
+      <img src="images/reine.JPG">
 
     <div class="close">
       <h1 onclick="closePopup()">X</h1>
     </div>
-  </div>
+
+    <script>
+      let img = document.querySelector('.full-screen img');
+
+        img.onmousemove = function(e) {
+          e.target.style.setProperty('--x',(100*e.offsetX/e.target.offsetWidth)+'%');
+          e.target.style.setProperty('--y',(100*e.offsetY/e.target.offsetHeight)+'%'); 
+        }
+    </script>
 
   </div>
 
-  </div>
 
 <script src="app.js"></script>
-<script src="slides.js"></script>
-<script>
-var slideIndex1 = 1;
-showDivs(slideIndex1);
-
-function plusDivs(n) {
-  showDivs(slideIndex1 += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides1");
-  if (n > x.length) {slideIndex1 = 1}
-  if (n < 1) {slideIndex1 = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex1-1].style.display = "block";
-}
-</script>
 
   </body>
 </html>
